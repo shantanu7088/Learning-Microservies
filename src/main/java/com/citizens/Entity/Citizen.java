@@ -23,6 +23,36 @@ public class Citizen {
 	private String name;
 	
 	@Column
-	private int vaccinationCenterId;
+	private int vaccinationcenterid;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getVaccinationcenterid() {
+		return vaccinationcenterid;
+	}
+
+	public void setVaccinationcenterid(int vaccinationcenterid) {
+		this.vaccinationcenterid = vaccinationcenterid;
+	}
+
+	@Override
+	public String toString() {
+		return "Citizen [id=" + id + ", name=" + name + ", vaccinationcenterid=" + vaccinationcenterid + "]";
+	}
+	
 
 }
